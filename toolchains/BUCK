@@ -1,0 +1,71 @@
+"""
+Toolchains
+"""
+
+# toolchains/BUCK
+load("@prelude//toolchains:cxx.bzl", "system_cxx_toolchain")
+load(":cross_cxx.bzl", "cross_cxx_toolchain")
+load("@prelude//toolchains:python.bzl", "system_python_bootstrap_toolchain")
+load("@prelude//toolchains:genrule.bzl", "system_genrule_toolchain")
+
+system_cxx_toolchain(
+    name = "cxx",
+    visibility = ["PUBLIC"],
+    c_flags = ["-D__link=__link"],
+    cxx_flags = [
+        "-D__link=__link",
+        "-std=c++17",
+        "-D__macosx=__macosx" if host_info().os.is_macos else "-D__windows=__windows",
+    ],
+)
+
+
+arch_flags = select(
+    {
+        "//config:v7em_f5dh": [
+            "-D__v7em_f5dh",
+            "-march=armv7e-m",
+            "-mthumb",
+            "-mfloat-abi=hard",
+            "-mfpu=fpv5-d16",
+            "-D__FPU_PRESENT=1", 
+            "-DARM_MATH_CM7=1"
+        ],
+    }
+)
+
+common_flags = arch_flags + [
+    "-D__arm=__arm",
+    "-O3",
+    "-D__StratifyOS__=__StratifyOS__",
+]
+
+cross_cxx_toolchain(
+    name = "arm-none-eabi",
+    visibility = ["PUBLIC"],
+    archiver_args = ["deps/local/bin/arm-none-eabi-ar"],
+    c_flags = common_flags,
+    cxx_flags = common_flags + ["-std=c++17", "-fno-exceptions", "-fno-rtti", "-fno-unwind-tables"],
+    compiler = "deps/local/bin/arm-none-eabi-gcc",
+    cxx_compiler = "deps/local/bin/arm-none-eabi-g++",
+    linker = "deps/local/bin/arm-none-eabi-g++",
+    compiler_type = "",
+)
+
+system_genrule_toolchain(
+    name = "genrule",
+    visibility = ["PUBLIC"],
+)
+
+system_python_bootstrap_toolchain(
+    name = "python_bootstrap",
+    visibility = ["PUBLIC"],
+)
+
+platform(
+    name = "arm_v7em_f5dh",
+    constraint_values = [
+        "//config:stratifyos",
+        "//config:v7em_f5dh"
+    ]    
+)

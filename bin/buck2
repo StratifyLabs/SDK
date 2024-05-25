@@ -1,0 +1,55 @@
+#!/usr/bin/env dotslash
+
+{
+    "name": "buck2",
+    "platforms": {
+        "macos-aarch64": {
+            "size": 24318102,
+            "hash": "blake3",
+            "digest": "43475ba2f1e1bbe52835016a7c5307396801a66b776bf714f7272588c9b5533e",
+            "format": "zst",
+            "path": "buck2",
+            "providers": [
+                {
+                    "url": "https://github.com/facebook/buck2/releases/download/latest/buck2-aarch64-apple-darwin.zst"
+                }
+            ]
+        },
+        "macos-x86_64": {
+            "size": 26344013,
+            "hash": "blake3",
+            "digest": "e6d6c6c9a020d870b7da98b334403cadc06b1453c45d66dbd35700c375efbc1a",
+            "format": "zst",
+            "path": "buck2",
+            "providers": [
+                {
+                    "url": "https://github.com/facebook/buck2/releases/download/latest/buck2-x86_64-apple-darwin.zst"
+                }
+            ]
+        },
+        "windows-x86_64": {
+            "size": 21766647,
+            "hash": "blake3",
+            "digest": "a1b7e5db1fd3e07d57e715f7372286a96d1016fbbe157a49b978f61c3016bac1",
+            "format": "zst",
+            "path": "buck2",
+            "providers": [
+                {
+                    "url": "https://github.com/facebook/buck2/releases/download/latest/buck2-x86_64-pc-windows-msvc.exe.zst"
+                }
+            ]
+        },
+        "linux-x86_64": {
+            "size": 27269261,
+            "hash": "blake3",
+            "digest": "044f9b9d78bb7c3d946881d04f005a76073867db3900786c0d13857162d2f161",
+            "format": "zst",
+            "path": "buck2",
+            "providers": [
+                {
+                    "url": "https://github.com/facebook/buck2/releases/download/latest/buck2-aarch64-unknown-linux-gnu.zst"
+                }
+            ]
+        }
+    }
+}

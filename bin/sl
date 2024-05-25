@@ -1,0 +1,31 @@
+#!/usr/bin/env dotslash
+
+{
+    "name": "sl",
+    "platforms": {
+        "macos-x86_64": {
+            "size": 1169699,
+            "hash": "blake3",
+            "digest": "4977bb3d4c16c9bc6e64fcabcb974dfde6384b85bff77130ba79357acc8425d2",
+            "format": "zip",
+            "path": "sl",
+            "providers": [
+                {
+                    "url": "https://github.com/StratifyLabs/sl2/releases/download/v2.0/sl-macos-x86_64.zip"
+                }
+            ]
+        },
+        "windows-x86_64": {
+            "size": 1774697,
+            "hash": "blake3",
+            "digest": "cd58d5790959d15c9366c07242f1d1ff78f00c64a0b5141c40076f4849a495ae",
+            "format": "zip",
+            "path": "sl.exe",
+            "providers": [
+                {
+                    "url": "https://github.com/StratifyLabs/sl2/releases/download/v2.0/sl-windows-x86_64.zip"
+                }
+            ]
+        }
+    }
+}

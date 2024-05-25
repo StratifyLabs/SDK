@@ -1,0 +1,18 @@
+constraint_setting(
+    name = "arm_arch",
+    visibility = ["PUBLIC"],
+)
+
+constraint_value(
+    name = "v7em_f5dh",
+    constraint_setting = ":arm_arch",
+    visibility = ["PUBLIC"],
+)
+
+constraint_value(
+    name = "stratifyos",
+    constraint_setting = "config//os/constraints:os",
+    visibility = ["PUBLIC"],
+)
+
+

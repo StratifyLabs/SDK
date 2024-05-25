@@ -1,0 +1,3 @@
+[deps.prelude]
+prelude = "https://github.com/StratifyLabs/buck2-prelude"
+branch = "main"
