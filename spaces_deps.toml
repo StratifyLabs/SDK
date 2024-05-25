@@ -1,3 +1,4 @@
 [deps.prelude]
 git = "https://github.com/StratifyLabs/buck2-prelude"
 branch = "main"
+rev = "0f14d88c8e36ef018c2d2c17e46cab250cd7c1ba"
