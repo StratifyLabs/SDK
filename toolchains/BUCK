@@ -19,7 +19,6 @@ system_cxx_toolchain(
     ],
 )
 
-
 arch_flags = select(
     {
         "//config:v7em_f5dh": [
@@ -28,10 +27,10 @@ arch_flags = select(
             "-mthumb",
             "-mfloat-abi=hard",
             "-mfpu=fpv5-d16",
-            "-D__FPU_PRESENT=1", 
-            "-DARM_MATH_CM7=1"
+            "-D__FPU_PRESENT=1",
+            "-DARM_MATH_CM7=1",
         ],
-    }
+    },
 )
 
 common_flags = arch_flags + [
@@ -40,15 +39,16 @@ common_flags = arch_flags + [
     "-D__StratifyOS__=__StratifyOS__",
 ]
 
+
 cross_cxx_toolchain(
     name = "arm-none-eabi",
     visibility = ["PUBLIC"],
-    archiver_args = ["deps/local/bin/arm-none-eabi-ar"],
+    archiver_args = ["arm_none_eabi/bin/arm-none-eabi-ar"],
     c_flags = common_flags,
     cxx_flags = common_flags + ["-std=c++17", "-fno-exceptions", "-fno-rtti", "-fno-unwind-tables"],
-    compiler = "deps/local/bin/arm-none-eabi-gcc",
-    cxx_compiler = "deps/local/bin/arm-none-eabi-g++",
-    linker = "deps/local/bin/arm-none-eabi-g++",
+    compiler = 'arm_none_eabi/bin/arm-none-eabi-gcc',
+    cxx_compiler = 'arm_none_eabi/bin/arm-none-eabi-g++',
+    linker = 'arm_none_eabi/bin/arm-none-eabi-g++',
     compiler_type = "",
 )
 
@@ -66,6 +66,6 @@ platform(
     name = "arm_v7em_f5dh",
     constraint_values = [
         "//config:stratifyos",
-        "//config:v7em_f5dh"
-    ]    
+        "//config:v7em_f5dh",
+    ],
 )

@@ -1,1 +1,1 @@
-export PATH=$PWD/SDK/bin:$HOME/.local/bin
+export PATH=$PWD/SDK/bin:$HOME/.local/bin:$PATH
