@@ -69,3 +69,10 @@ platform(
         "//config:v7em_f5dh",
     ],
 )
+
+platform(
+    name = "macos",
+    constraint_values = [
+        "config//os/constraints:macos",
+    ],
+)
