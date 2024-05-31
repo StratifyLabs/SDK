@@ -43,12 +43,12 @@ common_flags = arch_flags + [
 cross_cxx_toolchain(
     name = "arm-none-eabi",
     visibility = ["PUBLIC"],
-    archiver_args = ["arm_none_eabi/bin/arm-none-eabi-ar"],
+    archiver_args = ["stratifyos_arm_none_eabi/bin/arm-none-eabi-ar"],
     c_flags = common_flags,
     cxx_flags = common_flags + ["-std=c++17", "-fno-exceptions", "-fno-rtti", "-fno-unwind-tables"],
-    compiler = 'arm_none_eabi/bin/arm-none-eabi-gcc',
-    cxx_compiler = 'arm_none_eabi/bin/arm-none-eabi-g++',
-    linker = 'arm_none_eabi/bin/arm-none-eabi-g++',
+    compiler = 'stratifyos_arm_none_eabi/bin/arm-none-eabi-gcc',
+    cxx_compiler = 'stratifyos_arm_none_eabi/bin/arm-none-eabi-g++',
+    linker = 'stratifyos_arm_none_eabi/bin/arm-none-eabi-g++',
     compiler_type = "",
 )
 
@@ -76,3 +76,4 @@ platform(
         "config//os/constraints:macos",
     ],
 )
+

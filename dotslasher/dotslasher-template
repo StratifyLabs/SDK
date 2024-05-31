@@ -1,0 +1,43 @@
+#!/usr/bin/env dotslash
+
+{
+    "name": "{dotslasher-name}",
+    "platforms": {
+        "macos-x86_64": {
+          "size": 77400549,
+          "hash": "blake3",
+          "digest": "57f7cd6ec9205ec12b64dbdc6912cb7249136da158c1f1c8a3fba32be3901c3a",
+          "format": "tar.gz",
+          "path": "{dotslasher-path}",
+          "providers": [
+            {
+              "url": "https://github.com/StratifyLabs/SDK/releases/download/v8.3.1/stratifyos-arm-none-eabi-11.3.1-macos-x86_64.tar.gz"
+            }
+          ]
+        },
+        "windows-x86_64": {
+          "size": 152501946,
+          "hash": "blake3",
+          "digest": "b8496b7c946ca1479b82f5a28805693a9d077bfce684afcbebdefb166a484c57",
+          "format": "tar.gz",
+          "path": "{dotslasher-path}",
+          "providers": [
+            {
+              "url": "https://github.com/StratifyLabs/SDK/releases/download/v11.3.1/stratifyos-arm-none-eabi-11.3.1-windows-x86_64.tar.gz"
+            }
+          ]
+        },
+        "linux-x86_64": {
+          "size": 142900382,
+          "hash": "blake3",
+          "digest": "1882b2e6ffd5b6a519371e93d6a02db48d74dc4e0dea3ed35a3dc406d3d2c5dd",
+          "format": "tar.gz",
+          "path": "{dotslasher-path}",
+          "providers": [
+            {
+              "url": "https://github.com/StratifyLabs/SDK/releases/download/v11.3.1/stratifyos-arm-none-eabi-11.3.1-linux-x86_64.tar.gz"
+            }
+          ]
+        }
+    }
+}

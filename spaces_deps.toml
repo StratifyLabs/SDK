@@ -3,6 +3,7 @@ git = "https://github.com/StratifyLabs/buck2-prelude"
 branch = "main"
 rev = "0f14d88c8e36ef018c2d2c17e46cab250cd7c1ba"
 
-[archives.arm_none_eabi.macos_x86_64]
-url = "https://github.com/StratifyLabs/SDK/releases/download/v8.3.1/arm-none-eabi-8-2019-q3-update-macos-x86_64.tar.gz"
-sha256 = "930dcd8b837916c82608bdf198d9f34f71deefd432024fe98271449b742a3623"
+[archives.stratifyos_arm_none_eabi]
+url = "https://github.com/StratifyLabs/SDK/releases/download/v11.3.1/stratifyos-arm-none-eabi-11.3.1.zip"
+sha256 = "a8a3d4da94e030730aaa34cb4983fbe13724d818fbc11006fcace6233b167c14"
+link = "Hard"
