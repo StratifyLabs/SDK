@@ -5,5 +5,5 @@ rev = "0f14d88c8e36ef018c2d2c17e46cab250cd7c1ba"
 
 [archives.stratifyos_arm_none_eabi]
 url = "https://github.com/StratifyLabs/SDK/releases/download/v11.3.1/stratifyos-arm-none-eabi-11.3.1.zip"
-sha256 = "35109ec2663aba9a0ca06bbfaec124d219a34ff9d8270fc26f5a47a218794f55"
+sha256 = "b10ad7e0af6dc58448a3d79539a531d5ddc66d051d45969a66ae47834a3fa107"
 link = "Hard"
