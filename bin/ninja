@@ -1,0 +1,67 @@
+#!/usr/bin/env dotslash
+
+{
+    "name": "ninja",
+    "platforms": {
+        "macos-x86_64": {
+            "size": 281130,
+            "hash": "blake3",
+            "digest": "fe37342e051bd8e6e083446c620020e2cea7d935acd1a399e6f4801d31f36e1f",
+            "format": "zip",
+            "path": "ninja",
+            "providers": [
+                {
+                "url": "https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-mac.zip"
+                }
+            ]
+        },
+        "windows-x86_64": {
+            "size": 275425,
+            "hash": "blake3",
+            "digest": "3e76fd634c5c872a2e72e62918b3a1ed18aa9b6bf480f63f5644e5d1c12642fb",
+            "format": "zip",
+            "path": "ninja",
+            "providers": [
+                {
+                "url": "https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-win.zip"
+                }
+            ]
+        },
+        "windows-aarch64":   {
+            "size": 254317,
+            "hash": "blake3",
+            "digest": "bacff9ea652e836593a578f4ac53f6ec113d0ff39267ca2e756fe4433e1c7403",
+            "format": "zip",
+            "path": "TODO: specify the appropriate `path` for this artifact",
+            "providers": [
+                {
+                "url": "https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-winarm64.zip"
+                }
+            ]
+        },
+        "linux-aarch64": {
+            "size": 121787,
+            "hash": "blake3",
+            "digest": "690f5bd353034445d6abcdc94072d13e7a2994b9ee32d0b5ecb2a33c16f15072",
+            "format": "zip",
+            "path": "ninja",
+            "providers": [
+                {
+                "url": "https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-linux-aarch64.zip"
+                }
+            ]
+        },
+        "linux-x86_64": {
+            "size": 123084,
+            "hash": "blake3",
+            "digest": "a215e71a912f1343393669d0cedb88132b0cac61480abf367b59116239330b6b",
+            "format": "zip",
+            "path": "ninja",
+            "providers": [
+                {
+                "url": "https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-linux.zip"
+                }
+            ]
+        }
+    }
+}
