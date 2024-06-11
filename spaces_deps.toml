@@ -18,7 +18,7 @@ rev = "0f14d88c8e36ef018c2d2c17e46cab250cd7c1ba"
 
 [archives.stratifyos_arm_none_eabi]
 url = "https://github.com/StratifyLabs/SDK/releases/download/v11.3.1/stratifyos-arm-none-eabi-11.3.1.zip"
-sha256 = "b10ad7e0af6dc58448a3d79539a531d5ddc66d051d45969a66ae47834a3fa107"
+sha256 = "d32b82768b4d6c1f106a32182b386164fccd72863c7d558b3fef129281780ac4"
 link = "Hard"
 add_prefix = "{SPACES_SYSROOT}"
 
